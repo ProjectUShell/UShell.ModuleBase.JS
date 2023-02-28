@@ -245,3 +245,5 @@ ModelManifest.xml
 .fake/
 
 /(Vendor)/NuGet/
+lib/
+ushell-modulebase-*.tgz
