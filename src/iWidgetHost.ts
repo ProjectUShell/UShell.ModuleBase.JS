@@ -19,4 +19,11 @@ export interface IWidgetHost {
 
   getDataSource(dataSourceUid: string): Promise<IDataSource>;
 
+  /**
+   * informs about the global (application-wide) preference,
+   * on which side each wiget should render its own dedicated
+   * navigation panel (if there is one)
+   */
+  get allignWidgetNavPanelLeft(): boolean;
+
 }

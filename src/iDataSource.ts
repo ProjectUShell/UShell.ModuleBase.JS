@@ -1,4 +1,4 @@
-import { EntitySchema } from '@kornsw/entityschema';
+import { EntitySchema } from 'fusefx-modeldescription';
 
 export interface IDataSource {
 

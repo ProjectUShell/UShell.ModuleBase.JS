@@ -1,6 +1,6 @@
 {
   "name": "ushell-modulebase",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "UShell Module Base",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -32,6 +32,6 @@
     "lib/**/*"
   ],
   "dependencies": {
-    "@kornsw/entityschema": "^1.1.0"
+    "fusefx-modeldescription": "^1.1.0"
   }
 }
