@@ -1,8 +1,10 @@
 import { EntitySchema } from 'fusefx-modeldescription';
+import { PagingParams } from './PagingParams';
+import { PaginatedList } from './PaginatedList';
 
 export interface IDataSource {
 
-    //TODO: pagination and transformation to a state of max compatibility to UDAS-standard
+    //TODO: transformation to a state of max compatibility to UDAS-standard
 
     dataSourceUid: string;
     entitySchema?: EntitySchema;
@@ -18,7 +20,7 @@ export interface IDataSource {
     extractIdentityFrom(entity: object): object;
     containsIdentityOf(entity: object): Promise<boolean>;
 
-    getRecords(): Promise<object[]>;
+    getRecords(pagingParams?: PagingParams): Promise<PaginatedList>;
     getRecord(identityFields: object): Promise<object>;
 
 }
