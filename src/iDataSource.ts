@@ -27,4 +27,9 @@ export interface IDataSource {
     sortingParams?: SortingField[],
   ): Promise<PaginatedList>;
   getRecord(identityFields: object): Promise<object>;
+  getEntityRefs(
+    filter?: LogicalExpression,
+    pagingParams?: PagingParams,
+    sortingParams?: SortingField[],
+  ): Promise<PaginatedList>;
 }
