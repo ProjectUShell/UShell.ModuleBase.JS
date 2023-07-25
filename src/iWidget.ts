@@ -13,6 +13,6 @@ export interface IWidget {
    */
   widgetHost: IWidgetHost;
 
-  //getUsecaseRuntimeTags(): string[];
+  // getUsecaseRuntimeTags(): string[];
 
 }
