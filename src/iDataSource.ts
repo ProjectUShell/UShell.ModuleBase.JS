@@ -5,7 +5,7 @@ import { LogicalExpression } from './LogicalExpression';
 import { SortingField } from './SortingField';
 
 export interface IDataSource {
-  // TODO: transformation to a state of max compatibility to UDAS-standard
+  // TODO: transformation to a state of max compatibility to UDAS-standard WIP
 
   dataSourceUid: string;
   entitySchema?: EntitySchema;
