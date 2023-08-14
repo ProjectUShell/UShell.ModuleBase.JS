@@ -8,7 +8,13 @@ This files contains a version history including all changes relevant for semanti
 
 ## Upcoming Changes
 
-* reorganized solution structure and added Versioning / change log
+*(none)*
+
+
+
+## v 1.0.7
+released **2023-08-14**, including:
+ - reorganized solution structure and added Versioning / change log
 
 
 
