@@ -11,10 +11,10 @@ export interface IDataSource {
   entitySchema?: EntitySchema;
 
   // if null, the action is not supported!
-  readonly entityFactoryMethod: () => object;
-  readonly entityUpdateMethod: (entity: object) => Promise<boolean>;
-  readonly entityInsertMethod: (entity: object) => Promise<boolean>;
-  readonly entityDeleteMethod: (entity: object) => Promise<boolean>;
+  readonly entityFactoryMethod: () => any;
+  readonly entityUpdateMethod: (entity: any[]) => Promise<boolean>;
+  readonly entityInsertMethod: (entity: any[]) => Promise<boolean>;
+  readonly entityDeleteMethod: (entity: any[]) => Promise<boolean>;
 
   // getRecordCount(): Observable<number>;
 

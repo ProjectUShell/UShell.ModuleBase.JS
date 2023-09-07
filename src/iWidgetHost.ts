@@ -2,10 +2,9 @@ import { IDataSource } from './iDataSource';
 import { UsecaseState } from './usecaseState';
 
 export interface IWidgetHost {
-
   populateChangedState(changedState: UsecaseState): void;
 
-  subscribeEvent(name: string, subscriber: (args: object)=>void): void;
+  subscribeEvent(name: string, subscriber: (args: object) => void): void;
   fireEvent(name: string, args: object): void;
 
   /**
@@ -15,9 +14,10 @@ export interface IWidgetHost {
    * during token retrival...
    * @param tokenSourceUid a UUID/GUID addressing the source where the token should be retieved from
    */
-  getAccessToken(tokenSourceUid: string): Promise<{token: string, content: object}|null>
+  getAccessToken(tokenSourceUid: string): Promise<{ token: string; content: object } | null>;
 
   getDataSource(dataSourceUid: string): Promise<IDataSource>;
+  getDataSourceForEntity(entityName: string, storeName?: string): Promise<IDataSource>;
 
   /**
    * informs about the global (application-wide) preference,
@@ -25,5 +25,4 @@ export interface IWidgetHost {
    * navigation panel (if there is one)
    */
   get allignWidgetNavPanelLeft(): boolean;
-
 }
