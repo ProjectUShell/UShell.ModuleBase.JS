@@ -7,8 +7,13 @@ This files contains a version history including all changes relevant for semanti
 
 
 ## Upcoming Changes
-
  - IDataStore
+
+
+
+## v 1.0.8
+released **2023-08-14**, including:
+ - reorganized solution structure and added Versioning / change log
 
 
 
