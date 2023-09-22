@@ -32,6 +32,6 @@
     "lib/**/*"
   ],
   "dependencies": {
-    "fusefx-modeldescription": "^1.1.0"
+    "fusefx-modeldescription": "^2.0.2"
   }
 }
