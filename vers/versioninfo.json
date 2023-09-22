@@ -1,13 +1,13 @@
 {
-  "currentVersion": "1.0.9",
-  "currentVersionWithSuffix": "1.0.9",
+  "currentVersion": "1.0.10",
+  "currentVersionWithSuffix": "1.0.10",
   "releaseType": "official",
-  "previousVersion": "1.0.8",
+  "previousVersion": "1.0.9",
   "changeGrade": "patch",
   "currentMajor": 1,
   "currentMinor": 0,
-  "currentPatch": 9,
-  "versionDateInfo": "2023-09-11",
-  "versionTimeInfo": "11:11:27",
-  "versionNotes": "- IDataStore\n"
+  "currentPatch": 10,
+  "versionDateInfo": "2023-09-22",
+  "versionTimeInfo": "10:49:15",
+  "versionNotes": "- bumped fusefx-modeldescription to 2.0.2\n"
 }
