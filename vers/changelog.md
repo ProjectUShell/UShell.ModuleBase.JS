@@ -12,6 +12,12 @@ This files contains a version history including all changes relevant for semanti
 
 
 
+## v 1.0.11
+released **2023-10-05**, including:
+ - new revision without significant changes
+
+
+
 ## v 1.0.10
 released **2023-09-22**, including:
  - bumped fusefx-modeldescription to 2.0.2
