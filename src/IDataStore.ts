@@ -2,8 +2,8 @@ import { SchemaRoot } from "fusefx-modeldescription"
 import { IDataSource } from "./iDataSource"
 
 export interface IDataStore {
-  getSchemaRoot(): SchemaRoot   
-  tryGetDataSource(enityName: string): IDataSource | null  
+  getSchemaRoot(): Promise<SchemaRoot>
+  tryGetDataSource(enityName: string): Promise<IDataSource | null>
 }
 
 // FuseStore implementiert IStore und IDataSourceManager
