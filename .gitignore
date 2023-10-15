@@ -247,3 +247,4 @@ ModelManifest.xml
 /(Vendor)/NuGet/
 lib/
 ushell-modulebase-*.tgz
+package-lock.json

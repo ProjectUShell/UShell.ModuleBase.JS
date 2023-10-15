@@ -32,6 +32,7 @@
     "lib/**/*"
   ],
   "dependencies": {
-    "fusefx-modeldescription": "^2.0.5"
+    "fusefx-modeldescription": "^2.0.5",
+    "fusefx-repositorycontract": "^0.1.16"
   }
 }

@@ -1,8 +1,5 @@
 import { EntitySchema } from 'fusefx-modeldescription';
-import { PagingParams } from './PagingParams';
-import { PaginatedList } from './PaginatedList';
-import { LogicalExpression } from './LogicalExpression';
-import { SortingField } from './SortingField';
+import { PagingParams, PaginatedList, LogicalExpression, SortingField } from 'fusefx-repositorycontract';
 
 export interface IDataSource {
   // TODO: transformation to a state of max compatibility to UDAS-standard WIP

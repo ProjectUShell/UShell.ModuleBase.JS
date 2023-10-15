@@ -1,4 +1,7 @@
+export * from "./DataSourceService"
 export * from "./iDataSource"
+export * from "./IDataSourceManager"
+export * from "./IDataStore"
 export * from "./iWidget"
 export * from "./iWidgetHost"
 export * from "./usecaseState"

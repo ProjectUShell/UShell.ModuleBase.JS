@@ -1,5 +1,5 @@
 import { EntitySchema, FieldSchema, IndexSchema, RelationSchema, SchemaRoot } from 'fusefx-modeldescription';
-import { LogicalExpression } from './LogicalExpression';
+import { LogicalExpression } from 'fusefx-repositorycontract';
 
 export function getParentFilter(
   schemaRoot: SchemaRoot,
