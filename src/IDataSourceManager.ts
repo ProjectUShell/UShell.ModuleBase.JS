@@ -1,10 +1,11 @@
-import { IDataSource } from './iDataSource'
-import { SchemaRoot } from 'fusefx-modeldescription'
+import { IDataSource } from './iDataSource';
+import { SchemaRoot } from 'fusefx-modeldescription';
 
 export interface IDataSourceManagerBase {
-  tryGetDataSource(entityName: string, storeName?: string): Promise<IDataSource | null>
-  getSchemaRoot(): Promise<SchemaRoot>
+  init(): Promise<void>;
+  tryGetDataSource(entityName: string, storeName?: string): IDataSource | null;
+  getSchemaRoot(): SchemaRoot;
 }
 export interface IDataSourceManager extends IDataSourceManagerBase {
-  tryGetDataSourceByUid(uid: string): Promise<IDataSource | null>
+  tryGetDataSourceByUid(uid: string): Promise<IDataSource | null>;
 }
