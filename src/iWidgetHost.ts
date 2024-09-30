@@ -18,7 +18,7 @@ export interface IWidgetHost {
   getAccessToken(tokenSourceUid: string): Promise<{ token: string; content: object } | null>;
 
   getDataSource(dataSourceUid: string): Promise<IDataSource>;
-  getDataSourceForEntity(entityName: string, storeName?: string): Promise<IDataSource>;
+  getDataSourceForEntity(entityName: string, storeName?: string): IDataSource;
 
   getSchemaRoot(): SchemaRoot;
   /**
