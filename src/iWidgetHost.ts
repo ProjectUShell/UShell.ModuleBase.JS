@@ -1,8 +1,9 @@
 import { SchemaRoot } from 'fusefx-modeldescription';
 import { IDataSource } from './iDataSource';
 import { UsecaseState } from './usecaseState';
+import { IDataSourceManagerWidget } from './IDataSourceManager';
 
-export interface IWidgetHost {
+export interface IWidgetHost extends IDataSourceManagerWidget {
   populateChangedState(changedState: UsecaseState): void;
 
   subscribeEvent(name: string, subscriber: (args: object) => void): void;
@@ -20,7 +21,6 @@ export interface IWidgetHost {
   getDataSource(dataSourceUid: string): Promise<IDataSource>;
   getDataSourceForEntity(entityName: string, storeName?: string): IDataSource;
 
-  getSchemaRoot(): SchemaRoot;
   /**
    * informs about the global (application-wide) preference,
    * on which side each wiget should render its own dedicated
