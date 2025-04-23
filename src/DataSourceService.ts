@@ -33,7 +33,7 @@ export function getParentFilter(
   result.predicates.push({
     operator: '=',
     fieldName: childToParentRelation.foreignKeyIndexName,
-    value: parent[parentIdName],
+    valueSerialized: JSON.stringify(parent[parentIdName]),
   });
   return result;
 }
