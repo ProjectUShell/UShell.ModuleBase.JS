@@ -21,8 +21,8 @@ export interface IWidgetHost extends IDataSourceManagerWidget {
   getDataSource(dataSourceUid: string): Promise<IDataSource>;
   getDataSourceForEntity(entityName: string, storeName?: string): IDataSource;
 
-  getServiceByName<TService>(serviceName: string): TService;
-  createServiceProxy<TService>(serviceUrl: string): TService;
+  getServiceByName<TService extends object>(serviceName: string): TService;
+  createServiceProxy<TService extends object>(serviceUrl: string): TService;
 
   /**
    * informs about the global (application-wide) preference,
