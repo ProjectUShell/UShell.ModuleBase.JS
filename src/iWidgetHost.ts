@@ -24,6 +24,8 @@ export interface IWidgetHost extends IDataSourceManagerWidget {
   getServiceByName<TService extends object>(serviceName: string, tokenSourceUid?: string): TService;
   createServiceProxy<TService extends object>(serviceUrl: string, tokenSourceUid?: string): TService;
 
+  tryGetModuleBaseUrl(usecaseKey: string): string | null;
+
   /**
    * informs about the global (application-wide) preference,
    * on which side each wiget should render its own dedicated
