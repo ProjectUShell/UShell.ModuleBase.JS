@@ -12,6 +12,12 @@ This files contains a version history including all changes relevant for semanti
 
 
 
+## v 1.0.26
+released **2026-06-08**, including:
+ - added tryGetModuleBaseUrl
+
+
+
 ## v 1.0.25
 released **2025-08-05**, including:
  - new revision without significant changes

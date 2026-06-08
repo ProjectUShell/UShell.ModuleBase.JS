@@ -1,13 +1,13 @@
 {
-  "currentVersion": "1.0.25",
-  "currentVersionWithSuffix": "1.0.25",
+  "currentVersion": "1.0.26",
+  "currentVersionWithSuffix": "1.0.26",
   "releaseType": "",
-  "previousVersion": "1.0.24",
+  "previousVersion": "1.0.25",
   "changeGrade": "fix",
   "currentMajor": 1,
   "currentMinor": 0,
-  "currentPatch": 25,
-  "versionDateInfo": "2025-08-05",
-  "versionTimeInfo": "09:03:31",
-  "versionNotes": "- new revision without significant changes\n"
+  "currentPatch": 26,
+  "versionDateInfo": "2026-06-08",
+  "versionTimeInfo": "14:36:20",
+  "versionNotes": "- added tryGetModuleBaseUrl\\n"
 }
